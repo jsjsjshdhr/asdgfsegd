@@ -3,20 +3,16 @@
 
 <head>
   <title>Viper</title>
-
-  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="./js/preload.js"></script>
-
-  <script>
-    atOptions = {
-      'key': 'fc0ad22bd8c1ea22c8c08df927121e8f',
-      'format': 'iframe',
-      'height': 60,
-      'width': 468,
-      'params': {}
-    };
-  </script>
+  <style>
+    .frame {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 
 <body theme="main">
@@ -24,14 +20,13 @@
   <div class="center-container">
     <h1>Search</h1>
     <input class="pxyinput" type="text" placeholder="Search..." />
-    <div class="ad">
-      <script async="async" data-cfasync="false" src="//strodeintended.com/4f6e85f4c635684096b4338b181d1962/invoke.js"></script>
-    </div>
   </div>
-  <iframe class="frame"></iframe>
-</body>
 
-<script src="./js/index.js"></script>
-<script src="./js/search.js"></script>
+  <iframe class="frame"></iframe>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/search.js"></script>
+
+</body>
 
 </html>
